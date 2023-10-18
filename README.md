@@ -31,6 +31,23 @@ Below is the script for fine-tuning the MD17 task. Replace pretrain_model_path w
 python -u scripts/train.py --conf examples/ET-MD17_FT-angle_9500.yaml  --job-id frad_aspirin --dataset-arg aspirin --pretrained-model $pretrain_model_path --dihedral-angle-noise-scale 20 --position-noise-scale 0.005 --composition true --sep-noisy-node true --train-loss-type smooth_l1_loss
 ```
 
+## How to Cite
 
+If you find this work helpful, please consider citing us:
+```
+@InProceedings{pmlr-v202-feng23c,
+  title = 	 {Fractional Denoising for 3{D} Molecular Pre-training},
+  author =       {Feng, Shikun and Ni, Yuyan and Lan, Yanyan and Ma, Zhi-Ming and Ma, Wei-Ying},
+  booktitle = 	 {Proceedings of the 40th International Conference on Machine Learning},
+  pages = 	 {9938--9961},
+  year = 	 {2023},
+  volume = 	 {202},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {23--29 Jul},
+  publisher =    {PMLR},
+  pdf = 	 {https://proceedings.mlr.press/v202/feng23c/feng23c.pdf},
+  url = 	 {https://proceedings.mlr.press/v202/feng23c.html},
+}
+```
 
 
