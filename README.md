@@ -4,6 +4,20 @@ This repository contains the official implementation of the paper titled "Fracti
 ![Frad](assets/Frad.jpg)
 
 
+# Pre-training
+
+Pre-traing for Frad:
+
+
+```
+python -u scripts/train.py --conf examples/ET-PCQM4MV2_dih_var0.04_var2_com_re.yaml --layernorm-on-vec whitened --job-id frad_pretraining --num-epochs 8 
+```
+
+The data used to pre-train the model is provided here: https://drive.google.com/drive/folders/1F9CyD4HkVL0XFNwtSOTHaXgqZfzLAqFf?usp=sharing
+
+
+
+
 # Fine-Tuning
 
 ## Pre-trained Models
